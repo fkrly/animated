@@ -1,0 +1,70 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Aug 13 14:36:51 2023
+
+@author: fatih
+"""
+
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Sep 22 13:12:33 2021
+
+@author: fatihkur
+"""
+
+import drawsvg as draw
+
+d = draw.Drawing(1000, 1000, origin='center')
+
+c1= draw.Rectangle(-10, -10, 20, 20, fill='#00FF00')
+c2= draw.Rectangle(-10, -80, 20, 20, fill='#00FF00')
+c1.appendAnim(draw.Animate('opacity', '1s', '1;0;1',
+                          repeatCount='indefinite'))
+c2.appendAnim(draw.Animate('opacity', '1s', '1;0;1',
+                          repeatCount='indefinite'))
+
+
+
+
+
+d.append(c1)
+d.append(c2)
+d.saveSvg('animated.svg')
+
+
+
+# Animate the position and color of circle
+'''
+c = draw.Circle(0, 0, 20, fill='red')
+# See for supported attributes:
+# https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate
+c.appendAnim(draw.Animate('cy', '6s', '-80;80;-80',
+                          repeatCount='indefinite'))
+c.appendAnim(draw.Animate('cx', '6s', '0;80;0;-80;0',
+                          repeatCount='indefinite'))
+c.appendAnim(draw.Animate('fill', '6s', 'red;green;blue;yellow',
+                          calcMode='discrete',
+                          repeatCount='indefinite'))
+'''
+
+'''
+# Animate a black circle around an ellipse
+ellipse = draw.Path()
+ellipse.M(-90, 0)
+ellipse.A(90, 40, 360, True, True, 90, 0)  # Ellipse path
+ellipse.A(90, 40, 360, True, True, -90, 0)
+ellipse.Z()
+#c2 = draw.Circle(0, 0, 10)
+# See for supported attributes:
+# https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animateMotion
+#c2.appendAnim(draw.AnimateMotion(ellipse, '3s',
+#                                 repeatCount='indefinite'))
+# See for supported attributes:
+# https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animateTransform
+#c2.appendAnim(draw.AnimateTransform('scale', '3s', '1,2;2,1;1,2;2,1;1,2',
+#                                    repeatCount='indefinite'))
+#d.append(c2)
+
+#d.saveSvg('animated.svg')  # Save to file
+d  # Display in Jupyter notebook
+'''
