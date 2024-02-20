@@ -5,6 +5,7 @@ deneme 5
 deneme 7
 deneme 8
 deneme 9
+deneme 10
 import drawsvg as draw
 
 d = draw.Drawing(1000, 1000, origin='center')
