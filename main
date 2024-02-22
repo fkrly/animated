@@ -1,12 +1,13 @@
 deneme 2
 deneme 3
 deneme 4
-deneme 5
+deneme 5/6
 deneme 7
 deneme 8
 deneme 9
 deneme 10
 deneme 11
+deneme 12
 import drawsvg as draw
 
 d = draw.Drawing(1000, 1000, origin='center')
