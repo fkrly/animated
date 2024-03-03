@@ -1,4 +1,5 @@
 # Creating Animated SVG
+#Animatation started
 import drawsvg as draw
 
 d = draw.Drawing(1000, 1000, origin='center')
