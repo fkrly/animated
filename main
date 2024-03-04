@@ -3,7 +3,7 @@
 import drawsvg as draw
 
 d = draw.Drawing(1000, 1000, origin='center')
-
+#Rectangle create
 c1= draw.Rectangle(-10, -10, 20, 20, fill='#00FF00')
 c2= draw.Rectangle(-10, -80, 20, 20, fill='#00FF00')
 c1.appendAnim(draw.Animate('opacity', '1s', '1;0;1',
