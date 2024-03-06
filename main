@@ -44,11 +44,11 @@ ellipse.A(90, 40, 360, True, True, -90, 0)
 ellipse.Z()
 #c2 = draw.Circle(0, 0, 10)
 # See for supported attributes:
-# https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animateMotion
+
 #c2.appendAnim(draw.AnimateMotion(ellipse, '3s',
 #                                 repeatCount='indefinite'))
 # See for supported attributes:
-# https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animateTransform
+
 #c2.appendAnim(draw.AnimateTransform('scale', '3s', '1,2;2,1;1,2;2,1;1,2',
 #                                    repeatCount='indefinite'))
 #d.append(c2)
