@@ -55,4 +55,3 @@ ellipse.Z()
 
 #d.saveSvg('animated.svg')  # Save to file
 d  # Display in Jupyter notebook
-'''
