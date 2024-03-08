@@ -1,4 +1,3 @@
-# Creating Animated SVG
 #Animatation started
 import drawsvg as draw
 
